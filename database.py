@@ -2,26 +2,11 @@ import mysql.connector
 
 def get_connection():
     conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="password",
-        database="pdfs"
+        host="ypur sql host name",
+        user="username",
+        password="ypur password",
+        database="database name"
     )
 
     return conn
 
-# cursor = conn.cursor()
-
-# cursor.execute("USE pdfs;")
-
-# cursor.execute("""
-# CREATE TABLE IF NOT EXISTS documents(
-#     id INT PRIMARY KEY AUTO_INCREMENT,
-#     paragraph TEXT
-# )
-# """)
-
-# conn.commit()
-# conn.close()
-
-# print("Database Created Successfully")
